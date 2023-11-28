@@ -1,1 +1,16 @@
-/*# sourceMappingURL=main.component.css.map */
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div h1 {
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+div p {
+  line-height: 1.5rem;
+  padding: 0 15rem;
+  letter-spacing: 1px;
+  text-align: center;
+}/*# sourceMappingURL=main.component.css.map */
