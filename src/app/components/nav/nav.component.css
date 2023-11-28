@@ -1,0 +1,13 @@
+nav {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.6rem 0;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=nav.component.css.map */
