@@ -1,0 +1,15 @@
+nav {
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.6rem 0;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+  }
+}
