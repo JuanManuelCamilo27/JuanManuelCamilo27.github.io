@@ -1,0 +1,112 @@
+.board {
+  padding: 0.5rem;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.top-board {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  margin-bottom: 1rem;
+}
+.top-board .bomb-side,
+.top-board .time-side {
+  width: 6rem;
+}
+.top-board .bomb-side p,
+.top-board .time-side p {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+}
+.top-board .bomb-side .bomb-title,
+.top-board .bomb-side .time-title,
+.top-board .time-side .bomb-title,
+.top-board .time-side .time-title {
+  font-size: 0.9em;
+  line-height: 1.3rem;
+}
+.top-board .bomb-side .bomb-number,
+.top-board .bomb-side .time-number,
+.top-board .time-side .bomb-number,
+.top-board .time-side .time-number {
+  font-size: 2.3em;
+  line-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  background-color: grey;
+  margin: 0;
+}
+.top-board .flex-grow {
+  flex-grow: 1;
+}
+
+.board-container {
+  display: grid;
+  position: relative;
+  border: 1px solid white;
+}
+.board-container .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.board-container .lose-overlay,
+.board-container .win-overlay {
+  background-color: rgba(239, 68, 68, 0.8);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.board-container .lose-overlay .lose-overlay-p1,
+.board-container .lose-overlay .win-overlay-p1,
+.board-container .win-overlay .lose-overlay-p1,
+.board-container .win-overlay .win-overlay-p1 {
+  letter-spacing: 0.1rem;
+  font-size: 0.9em;
+  line-height: 1.3rem;
+  margin: 0;
+}
+.board-container .lose-overlay .lose-overlay-p2,
+.board-container .lose-overlay .win-overlay-p2,
+.board-container .win-overlay .lose-overlay-p2,
+.board-container .win-overlay .win-overlay-p2 {
+  font-size: 2.3em;
+  line-height: 2.5rem;
+  margin: 0;
+}
+.board-container .win-overlay {
+  background-color: rgb(34, 197, 94);
+}
+
+.button-container {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.button-container button {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.75rem;
+  padding: 0.5rem 0;
+  background-color: rgb(85, 85, 85);
+  border: none;
+  cursor: pointer;
+}
+.button-container button:hover {
+  background-color: rgb(90, 90, 90);
+}
+.button-container .new-game {
+  width: 100%;
+}
+.button-container .settings-button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 0.5rem;
+}/*# sourceMappingURL=board.component.css.map */
