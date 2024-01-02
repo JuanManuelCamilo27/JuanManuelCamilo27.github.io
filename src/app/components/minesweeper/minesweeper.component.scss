@@ -1,0 +1,11 @@
+.board-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: #b9b9b9;
+  .settings {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+}

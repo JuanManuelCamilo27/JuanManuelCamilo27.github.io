@@ -1,0 +1,17 @@
+<button
+  *ngIf="!cell.clicked && gameService.gamestate == 'run'"
+  (click)="onClick()"
+  (contextmenu)="onRightClick()"
+>
+  {{ flagSymbol }}
+</button>
+<button *ngIf="!cell.clicked && gameService.gamestate != 'run'" disabled>
+  {{ flagSymbol }}
+</button>
+<button
+  *ngIf="cell.clicked"
+  [ngStyle]="{ color: symbolColor, background: backgroundColor }"
+  disabled
+>
+  {{ symbol }}
+</button>
