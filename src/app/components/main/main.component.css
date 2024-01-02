@@ -2,6 +2,7 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 85vh;
 }
 div h1 {
   font-size: 3em;
