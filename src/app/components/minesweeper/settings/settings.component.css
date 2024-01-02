@@ -1,0 +1,44 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.overlay .settings {
+  padding: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  width: 22rem;
+}
+.overlay .settings p {
+  font-size: 1.5em;
+  line-height: 1rem;
+  font-weight: 700;
+}
+.overlay .settings label {
+  display: block;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.overlay .settings label span {
+  font-weight: 400;
+}
+.overlay .settings input {
+  width: 100%;
+}
+.overlay .settings button {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+  background-color: #555555;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 100%;
+}/*# sourceMappingURL=settings.component.css.map */
