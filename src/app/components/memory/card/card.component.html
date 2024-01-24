@@ -1,0 +1,11 @@
+<div
+  class="card"
+  (click)="onCardClick()"
+  [ngClass]="{
+    flipped: card.isFlipped,
+    disabled: card.disableClick,
+    clicked: card.wasClicked
+  }"
+>
+  <img [src]="card.isFlipped ? card.imageSrc : ''" alt="card" />
+</div>

@@ -1,0 +1,40 @@
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2em;
+  border: 1px solid black;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  .title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(90, 90, 90);
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 6rem;
+  }
+  .gamemodeButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(90, 90, 90);
+    p {
+      font-size: 1.3em;
+      font-weight: 800;
+    }
+    button {
+      cursor: pointer;
+      padding: 1rem 4rem;
+      font-size: 1.3em;
+    }
+  }
+}

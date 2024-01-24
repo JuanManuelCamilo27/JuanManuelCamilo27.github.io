@@ -1,0 +1,13 @@
+{
+  "images": [
+    { "id": 1, "path": "../../../assets/memoryGameImg/tiger.png" },
+    { "id": 2, "path": "../../../assets/memoryGameImg/redWolf.png" },
+    { "id": 3, "path": "../../../assets/memoryGameImg/giraffe.png" },
+    { "id": 4, "path": "../../../assets/memoryGameImg/zeebra.png" },
+    { "id": 5, "path": "../../../assets/memoryGameImg/lion.png" },
+    { "id": 6, "path": "../../../assets/memoryGameImg/gorilla.png" },
+    { "id": 7, "path": "../../../assets/memoryGameImg/elephant.png" },
+    { "id": 8, "path": "../../../assets/memoryGameImg/panda.png" },
+    { "id": 9, "path": "../../../assets/memoryGameImg/rhino.png" }
+  ]
+}
