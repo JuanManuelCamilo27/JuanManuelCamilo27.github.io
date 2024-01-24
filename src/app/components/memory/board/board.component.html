@@ -1,0 +1,54 @@
+<div class="scoreboard">
+  <p>Score: {{ score }}</p>
+  <p>Moves: {{ moves }}</p>
+  <p>Misses: {{ misses }}</p>
+  <p>Time: {{ gameService.time }}</p>
+</div>
+
+<div class="board" *ngIf="!infinityModeGame">
+  <div class="title">
+    <h2>Memory Game - Normal Mode</h2>
+  </div>
+  <div class="cards">
+    <div *ngFor="let card of cards">
+      <app-card
+        [card]="card"
+        (cardClicked)="handleCardClick($event)"
+      ></app-card>
+    </div>
+  </div>
+  <div class="gamemodeButton">
+    <p>Bored? Try:</p>
+    <button (click)="infinityMode()">Infinity Mode</button>
+  </div>
+</div>
+
+<div class="board" *ngIf="infinityModeGame">
+  <div class="title">
+    <h2>Memory Game - Infinity Mode</h2>
+  </div>
+  <div class="cards">
+    <div *ngFor="let card of cards">
+      <app-card
+        [card]="card"
+        (cardClicked)="handleInfinityCardClick($event)"
+      ></app-card>
+    </div>
+  </div>
+  <div class="gamemodeButton">
+    <p>Too difficult? Try:</p>
+    <button (click)="normalMode()">Normal Mode</button>
+  </div>
+</div>
+
+<div *ngIf="gameWon">
+  <app-result-message
+    (resetGame)="resetGame()"
+    [score]="score"
+    [time]="gameService.time"
+  ></app-result-message>
+</div>
+
+<div *ngIf="gameLost">
+  <app-game-over></app-game-over>
+</div>
