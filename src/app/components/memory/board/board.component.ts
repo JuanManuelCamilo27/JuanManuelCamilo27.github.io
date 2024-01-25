@@ -44,6 +44,7 @@ export class BoardComponent implements OnInit {
 
   ngOnInit() {
     this.loadImages();
+    this.gameService.restartTimer();
   }
 
   loadImages() {
