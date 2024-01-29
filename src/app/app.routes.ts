@@ -19,4 +19,9 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./components/memory/memory.routes').then((m) => m.routes),
   },
+  {
+    path: 'simon',
+    loadChildren: () =>
+      import('./components/simon/simon.routes').then((m) => m.routes),
+  },
 ];
