@@ -1,1 +1,43 @@
-<p>board works!</p>
+<div
+  class="game-board"
+  [style.pointer-events]="showingPattern ? 'none' : 'auto'"
+>
+  <div class="top-buttons">
+    <app-button
+      (click)="playSound('blue')"
+      [active]="colors.blue"
+      color="blue"
+      (guess)="playerGuess($event)"
+    ></app-button>
+    <app-button
+      (click)="playSound('yellow')"
+      [active]="colors.yellow"
+      color="yellow"
+      (guess)="playerGuess($event)"
+    ></app-button>
+  </div>
+  <div class="score">
+    <h1>SIMON</h1>
+    <button *ngIf="!gameStarted" class="button1" (click)="startGame()">
+      Start Game
+    </button>
+    <button *ngIf="gameStarted" class="button2" (click)="restartGame()">
+      Restart Game
+    </button>
+    <p>Level: {{ this.count }}</p>
+  </div>
+  <div class="bottom-buttons">
+    <app-button
+      (click)="playSound('red')"
+      [active]="colors.red"
+      color="red"
+      (guess)="playerGuess($event)"
+    ></app-button>
+    <app-button
+      (click)="playSound('green')"
+      [active]="colors.green"
+      color="green"
+      (guess)="playerGuess($event)"
+    ></app-button>
+  </div>
+</div>
