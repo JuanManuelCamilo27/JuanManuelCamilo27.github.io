@@ -2,7 +2,7 @@ nav {
   border: 1px solid black;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   padding: 0.6rem 0;
 }
 nav a {
@@ -10,4 +10,9 @@ nav a {
   color: black;
   font-size: 1.3em;
   letter-spacing: 1px;
+}
+nav a.active {
+  background-color: rgb(90, 90, 90);
+  color: white;
+  border-radius: 2px;
 }/*# sourceMappingURL=nav.component.css.map */
