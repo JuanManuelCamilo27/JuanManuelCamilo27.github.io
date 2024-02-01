@@ -6,17 +6,17 @@
   transition: box-shadow 0.3s;
   margin: 0.1rem;
   opacity: 0.4;
-  &:hover {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
-  }
+}
+.color-button:hover {
+  box-shadow: 0px 10px 20px rgb(0, 0, 0);
 }
 
 .color-button.red {
   background-color: #ec2a20; /* Rojo */
   border-bottom-left-radius: 100%;
-  &:active {
-    opacity: 1;
-  }
+}
+.color-button.red:active {
+  opacity: 1;
 }
 
 .color-button.red.active {
@@ -26,9 +26,9 @@
 .color-button.green {
   background-color: #1f9b2d; /* Verde */
   border-bottom-right-radius: 100%;
-  &:active {
-    opacity: 1;
-  }
+}
+.color-button.green:active {
+  opacity: 1;
 }
 
 .color-button.green.active {
@@ -38,9 +38,9 @@
 .color-button.blue {
   background-color: #0074d9; /* Azul */
   border-top-left-radius: 100%;
-  &:active {
-    opacity: 1;
-  }
+}
+.color-button.blue:active {
+  opacity: 1;
 }
 
 .color-button.blue.active {
@@ -50,11 +50,11 @@
 .color-button.yellow {
   background-color: #ffdc00; /* Amarillo */
   border-top-right-radius: 100%;
-  &:active {
-    opacity: 1;
-  }
+}
+.color-button.yellow:active {
+  opacity: 1;
 }
 
 .color-button.yellow.active {
   opacity: 1;
-}
+}/*# sourceMappingURL=button.component.css.map */
