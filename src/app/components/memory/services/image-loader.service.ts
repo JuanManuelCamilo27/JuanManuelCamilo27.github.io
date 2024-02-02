@@ -13,7 +13,7 @@ interface Image {
   providedIn: 'root',
 })
 export class ImageLoaderService {
-  private imgUrl = 'assets/memoryGameImg/list.json';
+  private imgUrl = '../../../../../docs/assets/memoryGameImg/list.json';
 
   constructor(private http: HttpClient) {}
 

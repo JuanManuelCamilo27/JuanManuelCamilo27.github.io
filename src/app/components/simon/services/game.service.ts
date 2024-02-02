@@ -54,7 +54,7 @@ export class GameService {
     for (let i = 0; i < this.player.length; i++) {
       if (this.player[i] !== this.simon[i]) {
         const audio = new Audio(
-          '../../../../assets/simonSound/wrong_sound_effect.mp3'
+          '../../../../../docs/assets/simonSound/wrong_sound_effect.mp3'
         );
         audio.play();
         return false;
