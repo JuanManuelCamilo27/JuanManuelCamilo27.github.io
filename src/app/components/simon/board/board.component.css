@@ -1,0 +1,51 @@
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.score {
+  position: absolute;
+  z-index: 1;
+  border-radius: 100%;
+  background-color: rgb(109, 104, 104);
+  top: 40%;
+  width: 250px;
+  height: 250px;
+}
+.score h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -250%);
+  color: white;
+}
+.score .button1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+}
+.score .button2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+}
+.score p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 100%);
+  font-size: 1.4em;
+  color: white;
+}/*# sourceMappingURL=board.component.css.map */

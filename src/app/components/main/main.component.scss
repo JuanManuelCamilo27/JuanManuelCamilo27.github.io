@@ -2,6 +2,7 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 85vh;
 
   h1 {
     font-size: 3em;
@@ -14,5 +15,10 @@ div {
     padding: 0 15rem;
     letter-spacing: 1px;
     text-align: center;
+  }
+  ul {
+    line-height: 1.5rem;
+    padding: 0 15rem;
+    letter-spacing: 1px;
   }
 }

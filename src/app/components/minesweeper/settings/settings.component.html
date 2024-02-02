@@ -1,0 +1,27 @@
+<div *ngIf="gameService.settingsVisible">
+  <div class="overlay">
+    <div class="settings">
+      <p>Settings</p>
+      <label for="width"
+        >Width: <span>{{ width.value }}</span></label
+      >
+      <input id="width" type="range" min="6" max="30" [formControl]="width" />
+
+      <label for="height"
+        >Height: <span>{{ height.value }}</span></label
+      >
+      <input id="height" type="range" min="6" max="30" [formControl]="height" />
+      <label for="bombs"
+        >Bombs: <span>{{ bombs.value }}</span></label
+      >
+      <input
+        id="bombs"
+        type="range"
+        min="6"
+        [max]="getMaxBombs()"
+        [formControl]="bombs"
+      />
+      <button (click)="saveSettings()">Save</button>
+    </div>
+  </div>
+</div>

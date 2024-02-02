@@ -1,0 +1,38 @@
+.card {
+  width: 140px;
+  height: 140px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: #454545;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.card:hover {
+  background-color: rgb(19, 19, 19);
+}
+.card img {
+  width: 140px;
+  height: 140px;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.flipped img {
+  opacity: 1;
+  transition: 1s;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.clicked {
+  background-color: black;
+}/*# sourceMappingURL=card.component.css.map */

@@ -1,0 +1,45 @@
+<div class="board">
+  <div class="top-board">
+    <div class="bomb-side">
+      <p class="bomb-title">Bombs</p>
+      <p class="bomb-number">
+        {{ gameService.bombs - gameService.flags }}
+      </p>
+    </div>
+    <div class="flex-grow"></div>
+    <div class="time-side">
+      <p class="time-title">Time</p>
+      <p class="time-number">
+        {{ gameService.time }}
+      </p>
+    </div>
+  </div>
+
+  <div class="board-container" [ngStyle]="getBoard()">
+    <div *ngIf="gameService.gamestate != 'run'" class="overlay"></div>
+    <div *ngIf="gameService.gamestate == 'lose'" class="lose-overlay">
+      <p class="lose-overlay-p1">GAMEOVER</p>
+      <p class="lose-overlay-p2">YOU LOSE</p>
+    </div>
+    <div *ngIf="gameService.gamestate == 'win'" class="win-overlay">
+      <p class="win-overlay-p1">GAMEOVER</p>
+      <p class="win-overlay-p2">YOU WIN</p>
+    </div>
+    <app-cell
+      class="cell"
+      *ngFor="let cell of gameService.cells; index as i"
+      [cell]="cell"
+      [index]="i"
+    ></app-cell>
+  </div>
+
+  <div class="button-container">
+    <button (click)="gameService.newGame()" class="new-game">NEW GAME</button>
+    <button
+      class="settings-button"
+      (click)="gameService.settingsVisible = true"
+    >
+      ⚙
+    </button>
+  </div>
+</div>
