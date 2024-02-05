@@ -53,9 +53,7 @@ export class GameService {
   compareSimon(): boolean {
     for (let i = 0; i < this.player.length; i++) {
       if (this.player[i] !== this.simon[i]) {
-        const audio = new Audio(
-          '../../../../../docs/assets/simonSound/wrong_sound_effect.mp3'
-        );
+        const audio = new Audio('assets/simonSound/wrong_sound_effect.mp3');
         audio.play();
         return false;
       }
