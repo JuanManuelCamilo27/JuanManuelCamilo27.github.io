@@ -29,3 +29,48 @@
     }
   }
 }
+
+@media screen and (max-width: 820px) {
+  .victory-screen {
+    top: 35%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 1.2em;
+    }
+    p {
+      font-size: 1em;
+    }
+    .newGameButton {
+      font-size: 1em;
+      padding: 0.5rem 0;
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .victory-screen {
+    top: 45%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+
+    h1 {
+      font-size: 0.8em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+    .newGameButton {
+      font-size: 0.8em;
+      padding: 0.5rem 0;
+      width: 50%;
+    }
+  }
+}
