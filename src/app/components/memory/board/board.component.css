@@ -31,10 +31,29 @@
 }
 .board .gamemodeButton p {
   font-size: 1.3em;
-  font-weight: 800;
+  font-weight: 600;
 }
 .board .gamemodeButton button {
   cursor: pointer;
   padding: 1rem 4rem;
   font-size: 1.3em;
+}
+
+@media screen and (max-width: 820px) {
+  .scoreboard {
+    font-size: 0.9em;
+  }
+  .board .title {
+    font-size: 0.8em;
+  }
+  .board .cards {
+    margin: 1rem 0;
+  }
+  .board .gamemodeButton p {
+    font-size: 0.9em;
+  }
+  .board .gamemodeButton button {
+    font-size: 0.9em;
+    padding: 0.5rem 2rem;
+  }
 }/*# sourceMappingURL=board.component.css.map */

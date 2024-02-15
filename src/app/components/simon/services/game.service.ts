@@ -45,7 +45,7 @@ export class GameService {
   async playerGuess(val: string) {
     this.player.push(val);
     if (!this.compareSimon()) {
-      await this.sleep(600);
+      await this.sleep(1000);
       this.restartSimon();
     }
   }
