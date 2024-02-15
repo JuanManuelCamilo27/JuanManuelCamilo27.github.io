@@ -56,7 +56,7 @@ export class BoardComponent implements OnInit {
   }
 
   async playerGuess(e: string) {
-    await this.sleep(600);
+    await this.sleep(500);
     this.gameService.playerGuess(e);
   }
 
@@ -65,9 +65,9 @@ export class BoardComponent implements OnInit {
     for (let i = 0; i < simon.length; i++) {
       this.colors[simon[i]] = true;
       this.playSound(simon[i]);
-      await this.sleep(600);
+      await this.sleep(200);
       this.colors[simon[i]] = false;
-      await this.sleep(400);
+      await this.sleep(300);
     }
     this.showingPattern = false;
   }
