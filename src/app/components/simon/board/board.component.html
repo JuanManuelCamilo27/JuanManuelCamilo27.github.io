@@ -16,15 +16,17 @@
       (guess)="playerGuess($event)"
     ></app-button>
   </div>
-  <div class="score">
-    <h1>SIMON</h1>
-    <button *ngIf="!gameStarted" class="button1" (click)="startGame()">
-      Start Game
-    </button>
-    <button *ngIf="gameStarted" class="button2" (click)="restartGame()">
-      Restart Game
-    </button>
-    <p>Level: {{ this.count }}</p>
+  <div class="score-container">
+    <div class="score">
+      <h1>SIMON</h1>
+      <button *ngIf="!gameStarted" class="button1" (click)="startGame()">
+        Start Game
+      </button>
+      <button *ngIf="gameStarted" class="button2" (click)="restartGame()">
+        Restart Game
+      </button>
+      <p>Level: {{ this.count }}</p>
+    </div>
   </div>
   <div class="bottom-buttons">
     <app-button

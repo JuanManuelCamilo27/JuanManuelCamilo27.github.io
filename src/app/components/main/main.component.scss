@@ -2,23 +2,66 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 85vh;
 
   h1 {
     font-size: 3em;
     font-weight: 400;
     letter-spacing: 1px;
+    text-align: center;
   }
 
   p {
     line-height: 1.5rem;
-    padding: 0 15rem;
+    padding: 0 5rem;
     letter-spacing: 1px;
     text-align: center;
   }
   ul {
     line-height: 1.5rem;
-    padding: 0 15rem;
+    padding: 0 8rem;
     letter-spacing: 1px;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  div {
+    h1 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1em;
+      padding: 0 1rem;
+    }
+    ul {
+      padding: 0 1rem;
+      text-align: left;
+      font-size: 1em;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  div {
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 0.9em;
+      padding: 0 2rem;
+    }
+    ul {
+      padding: 0 3rem;
+      text-align: left;
+      font-size: 0.9em;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }

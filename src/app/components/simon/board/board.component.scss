@@ -1,51 +1,65 @@
 .game-board {
+  background-color: black;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
-.score {
-  position: absolute;
-  z-index: 1;
-  border-radius: 100%;
-  background-color: rgb(109, 104, 104);
-  top: 40%;
-  width: 250px;
-  height: 250px;
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .score {
+    background-color: rgb(25, 25, 25);
+    border-radius: 100%;
+    box-shadow: 0 0 50px;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
 
-  h1 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -250%);
-    color: white;
+    h1 {
+      color: white;
+    }
+    .button1,
+    .button2 {
+      position: relative;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      cursor: pointer;
+    }
+    p {
+      position: relative;
+      font-size: 1.4em;
+      color: white;
+    }
   }
-  .button1 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.7rem 1.2rem;
-    cursor: pointer;
-  }
-  .button2 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.7rem 1.2rem;
-    cursor: pointer;
-  }
-  p {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 100%);
-    font-size: 1.4em;
-    color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .score-container {
+    .score {
+      width: 160px;
+      height: 160px;
+      h1 {
+        font-size: 1.3em;
+      }
+      .button1,
+      .button2 {
+        padding: 0.3rem 0.3rem;
+        font-size: 1em;
+        border-radius: 0.2rem;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
   }
 }
