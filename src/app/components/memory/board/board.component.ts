@@ -28,7 +28,7 @@ export class BoardComponent implements OnInit {
   flippedCards: Card[] = [];
 
   gameWon: boolean = false;
-  gameLost: boolean = true;
+  gameLost: boolean = false;
 
   moves: number = 0;
   misses: number = 0;
