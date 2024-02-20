@@ -12,7 +12,7 @@
 }
 
 .color-button.red {
-  background-color: #ec2a20; /* Rojo */
+  background-color: #ec2a20;
   border-bottom-left-radius: 100%;
 }
 .color-button.red:active {
@@ -24,7 +24,7 @@
 }
 
 .color-button.green {
-  background-color: #1f9b2d; /* Verde */
+  background-color: #1f9b2d;
   border-bottom-right-radius: 100%;
 }
 .color-button.green:active {
@@ -36,7 +36,7 @@
 }
 
 .color-button.blue {
-  background-color: #0074d9; /* Azul */
+  background-color: #0074d9;
   border-top-left-radius: 100%;
 }
 .color-button.blue:active {
@@ -48,7 +48,7 @@
 }
 
 .color-button.yellow {
-  background-color: #ffdc00; /* Amarillo */
+  background-color: #ffdc00;
   border-top-right-radius: 100%;
 }
 .color-button.yellow:active {
