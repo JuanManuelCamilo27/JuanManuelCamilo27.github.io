@@ -47,7 +47,7 @@ nav ul .menu a.active {
     top: 62px;
     background: #fff;
     width: 100%;
-    z-index: 1;
+    z-index: 100;
   }
   nav ul .menu.is-open a {
     border-bottom: 1px solid black;
