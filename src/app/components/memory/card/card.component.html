@@ -7,5 +7,5 @@
     clicked: card.wasClicked
   }"
 >
-  <img [src]="card.isFlipped ? card.imageSrc : ''" alt="card" />
+  <img loading="lazy" [src]="card.isFlipped ? card.imageSrc : ''" alt="card" />
 </div>

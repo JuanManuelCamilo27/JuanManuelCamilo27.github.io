@@ -28,7 +28,6 @@ export class ImageLoaderService {
   }
 
   private duplicateImages(images: Image[]): Image[] {
-    // Duplicar cada imagen manteniendo los mismos IDs
     const duplicatedImages = images.flatMap((image) => [image, { ...image }]);
 
     return duplicatedImages;
